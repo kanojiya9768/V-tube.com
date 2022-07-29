@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #111;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 221, 0);
+}
+
+.navbar > p{
+    margin-left: 30px;
+    font-size: 3.5vh;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar > .search_box{
+    width: 400px;
+    margin-right:50px;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: nowrap;
+    background-color: black;
+}
+
+.navbar > .search_box > input{
+    width: 350px;
+    height: 25px;
+    border: none;
+    /* border-radius: 10px; */
+    outline-width: 0;
+    font-size: 2.9vh;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(26, 26, 26);
+    color: #fff;
+}
+
+.navbar > .search_box > .submit-btn_icon{
+    padding: 10px;
+    /* color: #fff; */
+    background-color: black;
+    color: #fff;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+}
+
+.navbar > .profile_logo > .fa-user{
+    font-size: 3.8vh;
+    margin-right:50px;
+    cursor: pointer;
+}
+
+.filter{
+    width: 100%;
+    height: 55px;
+    margin: 10px auto 100px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* padding: 20px; */
+    overflow-x: scroll;
+    background-color: rgb(65, 65, 62);
+    gap: 10px;
+}
+
+.filter > button{
+    margin: 4px 10px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 99px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 2.3vh;
+    cursor: pointer;
+    background-color: rgb(255, 225, 0);
+    transition-duration: .5s;
+}
+
+.filter > button:hover{
+    background-color: rgb(255, 255, 255);
+}
+.video_container{
+    width: 100%;
+    height: 100vh;
+    /* margin-top: 100px; */
+    margin-left: 20px;
+    padding: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    cursor: pointer;
+    padding-top: 100px;
+}
+
+.video{
+    /* min-height: 250px;
+    height: auto; */
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 2px solid yellow;
+    text-align: center;
+    z-index: 1;
+}
+
+.thumbnail{
+    width:490px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.title{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.channel-name{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #afaaaa;
+}
